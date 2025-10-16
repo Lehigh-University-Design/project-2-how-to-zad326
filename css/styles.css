@@ -1,12 +1,9 @@
-/* styles.css */
 
-/* Global variables */
 
 :root {
     
 }
 
-/* Main styles */
 
 body {
  margin: 0;
@@ -22,7 +19,6 @@ p {
 }
 
 
-/* landing styles */
 
 #landing {
     width: 100vw;
@@ -58,4 +54,277 @@ p {
         font-weight: 400;
         text-transform: uppercase;
     }
+}
+
+html { scroll-behavior: smooth; }
+
+.section{
+  background:#666666;               
+  color:#eee;                       
+  max-width:1100px;
+  margin: 4rem auto 3rem;         
+  padding: 2rem 1.5rem;
+  border-radius: 12px;              
+}
+
+.section h2{
+  font-family: "Open Sans", sans-serif;
+  font-size: 2.2rem;                
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;        
+  margin: 0 0 1rem 0;
+  color:#f3f3f3;
+}
+
+.section p{
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  line-height: 1.65;
+  color:#e5e5e5;
+  margin: 0 0 1rem 0;
+}
+
+.section-grid{
+    display: flex;
+    gap: 20px; 
+    align-items: center; 
+  }
+  
+  .text-content {
+    flex: 1; 
+  }
+  
+  .image-content img {
+    max-width: 60%; 
+    height: auto; 
+    border-radius: 8px; 
+    margin: 0 auto; 
+    display: block; 
+  }
+
+  .image-content img[src="images/blue-track-car.jpeg"] {
+    max-width: 70%; 
+    height: auto;
+    border-radius: 8px;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .image-content img[src="images/street-car-orange.jpeg"] {
+    max-width: 70%; 
+    height: auto;
+    border-radius: 8px;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .image-content img[src="images/Boden-Autohaus.jpeg"] {
+    max-width: 50%; 
+    height: auto; 
+    border-radius: 8px; 
+    margin: 0 auto; 
+    display: block; 
+  }
+
+  .image-content img[src="images/Boden-Autohaus2.jpg"] {
+    max-width: 90%; 
+    height: auto;
+    border-radius: 8px; 
+    margin: 0 auto; 
+    display: block;
+  }
+
+  .image-content img[src="images/shakedown.jpg"] {
+    max-width: 70%; 
+    height: auto;
+    border-radius: 8px; 
+    margin: 0 auto; 
+    display: block; 
+  }
+  
+  .img-stack img,
+  .full-img{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;                   
+  }
+  
+  .section{
+    max-width: 1400px;                   
+    padding: 3rem 2rem;
+  }
+  
+  .section h2{
+    font-size: 2.4rem;
+  }
+  
+  @media (max-width:1000px){
+    .section-grid{
+      grid-template-columns: 1fr;
+    }
+  }
+
+#track-build .text-content p {
+  font-size: 1.1rem; 
+  line-height: 1.75; 
+  margin-bottom: 1.5rem; 
+}
+
+#track-build .text-content p:first-of-type {
+  font-weight: 600; 
+  font-size: 1.2rem; 
+}
+
+#track-build h2 {
+  font-size: 2.6rem; 
+  margin-bottom: 1.5rem; 
+  color: #ffffff; 
+}
+
+#track-build .section-grid {
+  gap: 40px; 
+}
+
+#track-build .text-content {
+  flex: 2; 
+}
+
+#track-build .image-content {
+  flex: 1; 
+}
+
+
+#street-build .text-content p {
+  font-size: 1.1rem; 
+  line-height: 1.75; 
+  margin-bottom: 1.5rem; 
+}
+
+#street-build .text-content p:first-of-type {
+  font-weight: 600; 
+  font-size: 1.2rem; 
+}
+
+#street-build h2 {
+  font-size: 2.6rem; 
+  margin-bottom: 1.5rem; 
+  color: #ffffff; 
+}
+
+#street-build .section-grid {
+  gap: 40px; 
+}
+
+#street-build .text-content {
+  flex: 2; 
+}
+
+#street-build .image-content {
+  flex: 1;
+}
+
+#shops .text-content p {
+  font-size: 1.1rem; 
+  line-height: 1.75; 
+  margin-bottom: 1.5rem; 
+}
+
+#shops .text-content p:first-of-type {
+  font-weight: 600; 
+  font-size: 1.2rem; 
+}
+
+#shops h2 {
+  font-size: 2.6rem; 
+  margin-bottom: 1.5rem; 
+  color: #ffffff; 
+}
+
+#shops .section-grid {
+  gap: 40px; 
+}
+
+#shops .text-content {
+  flex: 2; 
+}
+
+#shops .image-content {
+  flex: 1; 
+}
+
+.image-content img[src="images/Boden-Autohaus2.jpg"] {
+  max-width: 90%; 
+  height: auto; 
+  border-radius: 8px; 
+  margin: 0 auto; 
+  display: block; 
+}
+
+#shakedown .text-content p {
+  font-size: 1.1rem; 
+  line-height: 1.75; 
+  margin-bottom: 1.5rem;
+}
+
+#shakedown .text-content p:first-of-type {
+  font-weight: 600; 
+  font-size: 1.2rem; 
+}
+
+#shakedown h2 {
+  font-size: 2.6rem; 
+  margin-bottom: 1.5rem; 
+  color: #ffffff; 
+}
+
+#shakedown .section-grid {
+  gap: 40px; 
+}
+
+#shakedown .text-content {
+  flex: 2; 
+}
+
+#shakedown .image-content {
+  flex: 1; 
+}
+
+#tweaking-build .text-content p {
+  font-size: 1.1rem; 
+  line-height: 1.75; 
+  margin-bottom: 1.5rem; 
+}
+
+#tweaking-build .text-content p:first-of-type {
+  font-weight: 600; 
+  font-size: 1.2rem; 
+}
+
+#tweaking-build h2 {
+  font-size: 2.6rem; 
+  margin-bottom: 1.5rem; 
+  color: #ffffff; 
+}
+
+#tweaking-build .section-grid {
+  gap: 40px; 
+}
+
+#tweaking-build .text-content {
+  flex: 2; 
+}
+
+#tweaking-build .image-content {
+  flex: 1; 
+}
+
+
+#tweaking-build .img-stack img {
+  max-width: 70%; 
+  height: auto; 
+  border-radius: 8px; 
+  margin: 10px auto; 
+  display: block; 
 }
